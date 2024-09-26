@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5AFEE6722CA5F21C00212D13 /* SkedgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFEE6712CA5F21C00212D13 /* SkedgeApp.swift */; };
+		5AFEE6742CA5F21C00212D13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFEE6732CA5F21C00212D13 /* ContentView.swift */; };
+		5AFEE6762CA5F21D00212D13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AFEE6752CA5F21D00212D13 /* Assets.xcassets */; };
+		5AFEE6792CA5F21D00212D13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AFEE6782CA5F21D00212D13 /* Preview Assets.xcassets */; };
+		5AFEE6832CA5F21D00212D13 /* SkedgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFEE6822CA5F21D00212D13 /* SkedgeTests.swift */; };
+		5AFEE68D2CA5F21D00212D13 /* SkedgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFEE68C2CA5F21D00212D13 /* SkedgeUITests.swift */; };
+		5AFEE68F2CA5F21D00212D13 /* SkedgeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFEE68E2CA5F21D00212D13 /* SkedgeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5AFEE67F2CA5F21D00212D13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AFEE6662CA5F21C00212D13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AFEE66D2CA5F21C00212D13;
+			remoteInfo = Skedge;
+		};
+		5AFEE6892CA5F21D00212D13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AFEE6662CA5F21C00212D13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AFEE66D2CA5F21C00212D13;
+			remoteInfo = Skedge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5AFEE66E2CA5F21C00212D13 /* Skedge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skedge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AFEE6712CA5F21C00212D13 /* SkedgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkedgeApp.swift; sourceTree = "<group>"; };
+		5AFEE6732CA5F21C00212D13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5AFEE6752CA5F21D00212D13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5AFEE6782CA5F21D00212D13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5AFEE67E2CA5F21D00212D13 /* SkedgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkedgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AFEE6822CA5F21D00212D13 /* SkedgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkedgeTests.swift; sourceTree = "<group>"; };
+		5AFEE6882CA5F21D00212D13 /* SkedgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkedgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AFEE68C2CA5F21D00212D13 /* SkedgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkedgeUITests.swift; sourceTree = "<group>"; };
+		5AFEE68E2CA5F21D00212D13 /* SkedgeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkedgeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5AFEE66B2CA5F21C00212D13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFEE67B2CA5F21D00212D13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFEE6852CA5F21D00212D13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5AFEE6652CA5F21C00212D13 = {
+			isa = PBXGroup;
+			children = (
+				5AFEE6702CA5F21C00212D13 /* Skedge */,
+				5AFEE6812CA5F21D00212D13 /* SkedgeTests */,
+				5AFEE68B2CA5F21D00212D13 /* SkedgeUITests */,
+				5AFEE66F2CA5F21C00212D13 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5AFEE66F2CA5F21C00212D13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AFEE66E2CA5F21C00212D13 /* Skedge.app */,
+				5AFEE67E2CA5F21D00212D13 /* SkedgeTests.xctest */,
+				5AFEE6882CA5F21D00212D13 /* SkedgeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AFEE6702CA5F21C00212D13 /* Skedge */ = {
+			isa = PBXGroup;
+			children = (
+				5AFEE6712CA5F21C00212D13 /* SkedgeApp.swift */,
+				5AFEE6732CA5F21C00212D13 /* ContentView.swift */,
+				5AFEE6752CA5F21D00212D13 /* Assets.xcassets */,
+				5AFEE6772CA5F21D00212D13 /* Preview Content */,
+			);
+			path = Skedge;
+			sourceTree = "<group>";
+		};
+		5AFEE6772CA5F21D00212D13 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5AFEE6782CA5F21D00212D13 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5AFEE6812CA5F21D00212D13 /* SkedgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5AFEE6822CA5F21D00212D13 /* SkedgeTests.swift */,
+			);
+			path = SkedgeTests;
+			sourceTree = "<group>";
+		};
+		5AFEE68B2CA5F21D00212D13 /* SkedgeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5AFEE68C2CA5F21D00212D13 /* SkedgeUITests.swift */,
+				5AFEE68E2CA5F21D00212D13 /* SkedgeUITestsLaunchTests.swift */,
+			);
+			path = SkedgeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5AFEE66D2CA5F21C00212D13 /* Skedge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AFEE6922CA5F21D00212D13 /* Build configuration list for PBXNativeTarget "Skedge" */;
+			buildPhases = (
+				5AFEE66A2CA5F21C00212D13 /* Sources */,
+				5AFEE66B2CA5F21C00212D13 /* Frameworks */,
+				5AFEE66C2CA5F21C00212D13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Skedge;
+			productName = Skedge;
+			productReference = 5AFEE66E2CA5F21C00212D13 /* Skedge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5AFEE67D2CA5F21D00212D13 /* SkedgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AFEE6952CA5F21D00212D13 /* Build configuration list for PBXNativeTarget "SkedgeTests" */;
+			buildPhases = (
+				5AFEE67A2CA5F21D00212D13 /* Sources */,
+				5AFEE67B2CA5F21D00212D13 /* Frameworks */,
+				5AFEE67C2CA5F21D00212D13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AFEE6802CA5F21D00212D13 /* PBXTargetDependency */,
+			);
+			name = SkedgeTests;
+			productName = SkedgeTests;
+			productReference = 5AFEE67E2CA5F21D00212D13 /* SkedgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5AFEE6872CA5F21D00212D13 /* SkedgeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AFEE6982CA5F21D00212D13 /* Build configuration list for PBXNativeTarget "SkedgeUITests" */;
+			buildPhases = (
+				5AFEE6842CA5F21D00212D13 /* Sources */,
+				5AFEE6852CA5F21D00212D13 /* Frameworks */,
+				5AFEE6862CA5F21D00212D13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AFEE68A2CA5F21D00212D13 /* PBXTargetDependency */,
+			);
+			name = SkedgeUITests;
+			productName = SkedgeUITests;
+			productReference = 5AFEE6882CA5F21D00212D13 /* SkedgeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5AFEE6662CA5F21C00212D13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					5AFEE66D2CA5F21C00212D13 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					5AFEE67D2CA5F21D00212D13 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 5AFEE66D2CA5F21C00212D13;
+					};
+					5AFEE6872CA5F21D00212D13 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 5AFEE66D2CA5F21C00212D13;
+					};
+				};
+			};
+			buildConfigurationList = 5AFEE6692CA5F21C00212D13 /* Build configuration list for PBXProject "Skedge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5AFEE6652CA5F21C00212D13;
+			productRefGroup = 5AFEE66F2CA5F21C00212D13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5AFEE66D2CA5F21C00212D13 /* Skedge */,
+				5AFEE67D2CA5F21D00212D13 /* SkedgeTests */,
+				5AFEE6872CA5F21D00212D13 /* SkedgeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5AFEE66C2CA5F21C00212D13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AFEE6792CA5F21D00212D13 /* Preview Assets.xcassets in Resources */,
+				5AFEE6762CA5F21D00212D13 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFEE67C2CA5F21D00212D13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFEE6862CA5F21D00212D13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AFEE66A2CA5F21C00212D13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AFEE6742CA5F21C00212D13 /* ContentView.swift in Sources */,
+				5AFEE6722CA5F21C00212D13 /* SkedgeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFEE67A2CA5F21D00212D13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AFEE6832CA5F21D00212D13 /* SkedgeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFEE6842CA5F21D00212D13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AFEE68D2CA5F21D00212D13 /* SkedgeUITests.swift in Sources */,
+				5AFEE68F2CA5F21D00212D13 /* SkedgeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5AFEE6802CA5F21D00212D13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AFEE66D2CA5F21C00212D13 /* Skedge */;
+			targetProxy = 5AFEE67F2CA5F21D00212D13 /* PBXContainerItemProxy */;
+		};
+		5AFEE68A2CA5F21D00212D13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AFEE66D2CA5F21C00212D13 /* Skedge */;
+			targetProxy = 5AFEE6892CA5F21D00212D13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5AFEE6902CA5F21D00212D13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5AFEE6912CA5F21D00212D13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5AFEE6932CA5F21D00212D13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Skedge/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = joemmalatesta.Skedge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5AFEE6942CA5F21D00212D13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Skedge/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = joemmalatesta.Skedge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5AFEE6962CA5F21D00212D13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = joemmalatesta.SkedgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Skedge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Skedge";
+			};
+			name = Debug;
+		};
+		5AFEE6972CA5F21D00212D13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = joemmalatesta.SkedgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Skedge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Skedge";
+			};
+			name = Release;
+		};
+		5AFEE6992CA5F21D00212D13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = joemmalatesta.SkedgeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Skedge;
+			};
+			name = Debug;
+		};
+		5AFEE69A2CA5F21D00212D13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = joemmalatesta.SkedgeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Skedge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5AFEE6692CA5F21C00212D13 /* Build configuration list for PBXProject "Skedge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AFEE6902CA5F21D00212D13 /* Debug */,
+				5AFEE6912CA5F21D00212D13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AFEE6922CA5F21D00212D13 /* Build configuration list for PBXNativeTarget "Skedge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AFEE6932CA5F21D00212D13 /* Debug */,
+				5AFEE6942CA5F21D00212D13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AFEE6952CA5F21D00212D13 /* Build configuration list for PBXNativeTarget "SkedgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AFEE6962CA5F21D00212D13 /* Debug */,
+				5AFEE6972CA5F21D00212D13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AFEE6982CA5F21D00212D13 /* Build configuration list for PBXNativeTarget "SkedgeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AFEE6992CA5F21D00212D13 /* Debug */,
+				5AFEE69A2CA5F21D00212D13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5AFEE6662CA5F21C00212D13 /* Project object */;
+}
