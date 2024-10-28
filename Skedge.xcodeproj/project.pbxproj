@@ -44,6 +44,7 @@
 		5AFEE6882CA5F21D00212D13 /* SkedgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkedgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFEE68C2CA5F21D00212D13 /* SkedgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkedgeUITests.swift; sourceTree = "<group>"; };
 		5AFEE68E2CA5F21D00212D13 /* SkedgeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkedgeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5AFEE69B2CA5F26C00212D13 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 		5AFEE6652CA5F21C00212D13 = {
 			isa = PBXGroup;
 			children = (
+				5AFEE69B2CA5F26C00212D13 /* README.md */,
 				5AFEE6702CA5F21C00212D13 /* Skedge */,
 				5AFEE6812CA5F21D00212D13 /* SkedgeTests */,
 				5AFEE68B2CA5F21D00212D13 /* SkedgeUITests */,
