@@ -6,75 +6,70 @@
 //
 
 import SwiftUI
-
-struct Todo: Identifiable {
-    let id = UUID()
-    var text: String
-    var isStrikethrough: Bool
-}
+import UIKit
 
 struct ContentView: View {
-    @State private var todos: [Todo] = []
-    @State private var deletedTodos: [Todo] = []  // Track deleted todos
+    @State private var todos: [(text: String, isStrikethrough: Bool)] = [
+        (text: "Tap once to strike through", isStrikethrough: false),
+        (text: "Tap again to delete", isStrikethrough: true)
+    ]
     @State private var newTodo: String = ""
+    @State private var previousStates: [[(text: String, isStrikethrough: Bool)]] = []
+    
+    // Add this property for haptic feedback
+    private let feedback = UINotificationFeedbackGenerator()
     
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
+                Button(action: undo) {
+                    Image(systemName: "arrow.uturn.backward")
+                        .foregroundColor(previousStates.isEmpty ? .gray : .primary)
+                }
+                .disabled(previousStates.isEmpty)
+                
                 TextField("Add new todo", text: $newTodo)
                 Button(action: {
                     if !newTodo.isEmpty {
-                        todos.append(Todo(text: newTodo, isStrikethrough: false))
+                        todos.append((newTodo, false))
                         newTodo = ""
                     }
                 }) {
-                    Image(systemName: "arrow.right.circle.fill")
-                        .foregroundColor(.black)
+                    Image(systemName: "arrow.right")
+                        .foregroundColor(.primary)
                 }
             }
             .padding()
             
-            ForEach(todos) { todo in
+            ForEach(todos.indices, id: \.self) { index in
                 HStack {
-                    Text(todo.text)
-                        .strikethrough(todo.isStrikethrough)
-                        .opacity(todo.isStrikethrough ? 0.5 : 1.0)
+                    Text(todos[index].text)
+                        .strikethrough(todos[index].isStrikethrough)
+                        .opacity(todos[index].isStrikethrough ? 0.5 : 1.0)
                     Spacer()
+                    
                 }
                 .contentShape(Rectangle())
                 .onTapGesture {
-                    if let index = todos.firstIndex(where: { $0.id == todo.id }) {
-                        if todos[index].isStrikethrough {
-                            deletedTodos.append(todos[index])  // Store before removing
-                            todos.remove(at: index)
-                        } else {
-                            todos[index].isStrikethrough = true
-                        }
+                    previousStates.append(todos)
+                    if todos[index].isStrikethrough {
+                        todos.remove(at: index)
+                        feedback.notificationOccurred(.success)
+                    } else {
+                        todos[index].isStrikethrough = true
+                        feedback.notificationOccurred(.success)
                     }
                 }
                 .padding(.horizontal)
             }
             Spacer()
         }
-        .gesture(
-            MagnificationGesture()
-                .onEnded { value in
-                    if value > 1.0 {  // Outward pinch
-                        undoLastAction()
-                    }
-                }
-        )
     }
     
-    private func undoLastAction() {
-        if let lastDeleted = deletedTodos.popLast() {
-            todos.append(lastDeleted)
-        } else if let lastTodo = todos.last {
-            if lastTodo.isStrikethrough {
-                if let index = todos.firstIndex(where: { $0.id == lastTodo.id }) {
-                    todos[index].isStrikethrough = false
-                }
-            }
+    private func undo() {
+        if let previousState = previousStates.popLast() {
+            print(previousState)
+            todos = previousState
         }
     }
 }
