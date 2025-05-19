@@ -1,19 +1,26 @@
 import React, { useState, useEffect, useRef } from "react";
-import { StyleSheet, Text, View, Alert, Animated, Pressable } from "react-native";
+import { StyleSheet, Text, View, Alert, Animated, Pressable, Platform } from "react-native";
 import { StatusBar } from "expo-status-bar";
-import { Audio } from "expo-av";
+import Voice from "@react-native-voice/voice";
 
 export default function App() {
-	const [recording, setRecording] = useState<Audio.Recording | null>(null);
 	const [isRecording, setIsRecording] = useState(false);
-	const [permission, setPermission] = useState<"undetermined" | "granted" | "denied">("undetermined");
+	const [transcript, setTranscript] = useState("");
 	const scaleAnim = useRef(new Animated.Value(1)).current;
 
 	useEffect(() => {
-		(async () => {
-			const { status } = await Audio.requestPermissionsAsync();
-			setPermission(status);
-		})();
+		Voice.onSpeechResults = (e) => {
+			if (e.value && e.value.length > 0) {
+				setTranscript(e.value[0]);
+			}
+		};
+		Voice.onSpeechError = (e) => {
+			Alert.alert("Speech Error", JSON.stringify(e.error));
+			setIsRecording(false);
+		};
+		return () => {
+			Voice.destroy().then(Voice.removeAllListeners);
+		};
 	}, []);
 
 	useEffect(() => {
@@ -37,42 +44,36 @@ export default function App() {
 		}
 	}, [isRecording]);
 
-	const startRecording = async () => {
+	const startListening = async () => {
 		try {
-			if (permission !== "granted") {
-				Alert.alert("Permission required", "Please grant microphone access.");
-				return;
-			}
-			await Audio.setAudioModeAsync({
-				allowsRecordingIOS: true,
-				playsInSilentModeIOS: true,
-			});
-			const { recording } = await Audio.Recording.createAsync(Audio.RecordingOptionsPresets.HIGH_QUALITY);
-			setRecording(recording);
+			setTranscript("");
+			await Voice.start(Platform.OS === "ios" ? "en-US" : "en-US");
 			setIsRecording(true);
-		} catch (err) {
-			console.error("Failed to start recording", err);
+		} catch (e) {
+			let message = "Unknown error";
+			if (e instanceof Error) message = e.message;
+			else if (typeof e === "string") message = e;
+			Alert.alert("Could not start speech recognition", message);
 		}
 	};
 
-	const stopRecording = async () => {
+	const stopListening = async () => {
 		try {
-			if (!recording) return;
-			await recording.stopAndUnloadAsync();
-			const uri = recording.getURI();
-			console.log("Recording stopped and stored at", uri);
-			setRecording(null);
+			await Voice.stop();
 			setIsRecording(false);
-		} catch (err) {
-			console.error("Failed to stop recording", err);
+		} catch (e) {
+			let message = "Unknown error";
+			if (e instanceof Error) message = e.message;
+			else if (typeof e === "string") message = e;
+			Alert.alert("Could not stop speech recognition", message);
 		}
 	};
 
 	const handlePress = () => {
 		if (isRecording) {
-			stopRecording();
+			stopListening();
 		} else {
-			startRecording();
+			startListening();
 		}
 	};
 
@@ -83,6 +84,7 @@ export default function App() {
 					<Text style={styles.circleText}>{isRecording ? "Listening..." : "Tap to Chat"}</Text>
 				</Pressable>
 			</Animated.View>
+			<Text style={styles.transcript}>{transcript}</Text>
 			<StatusBar style="auto" />
 		</View>
 	);
@@ -120,5 +122,12 @@ const styles = StyleSheet.create({
 		fontSize: 28,
 		fontWeight: "600",
 		textAlign: "center",
+	},
+	transcript: {
+		marginTop: 40,
+		fontSize: 22,
+		color: "#222",
+		textAlign: "center",
+		paddingHorizontal: 20,
 	},
 });
